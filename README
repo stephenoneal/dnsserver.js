@@ -1,3 +1,8 @@
-This is a very basic authority server built with Node.js
+forked from https://github.com/sh1mmer/dnsserver.js
 
-The dev branch is more interesting, but also broken as of 2010-09-01
+New purpose is to setup a service that sole purpose is to eat type 65 requests and return an rfc compliant non-forwarded response that doesn't
+trigger subsequent requests.
+
+TODO: cut down to functionally enough to blackhole the type 65 request
+TODO: include instructions on the iptables match for shunting dns type 65 requests away from the intended dns port to a new port.
+TODO: add more tests?
